@@ -7,7 +7,7 @@ const partnerRouter = require('./Routes/partnerRoutes')
 require("dotenv").config()
 const app = express();
 app.use(express.json())
-app.use('/admin',adminRouter)
+app.use('/',adminRouter)
 app.use('/partner',partnerRouter)
 
 const connectDB = async()=>{
